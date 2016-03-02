@@ -4054,3 +4054,14 @@
 			font-size: 23px;
 			color: #6AA8B7 !important;
 		}
+
+		#book-button-top {
+			background-color: #EF4836;
+			color: white;
+			padding: 5px 10px;
+			margin: 10px;
+			font-size: 0.6em;
+			text-transform: uppercase;
+			letter-spacing: 0.25em;
+			line-height: 20px;
+		}
