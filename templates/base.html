@@ -28,24 +28,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="navbar-brand" href="#"><span>broomster</span></a>
+          <a class="navbar-brand" href="{% url 'index' %}"><span>broomster</span></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#about">About</a>
+              <a href="{% url 'index' %}#about">About</a>
             </li>
 						<li>
-							<a href="#one">Services</a>
+							<a href="{% url 'index' %}#one">Services</a>
 						</li>
 						<li>
-							<a href="#two">FAQ</a>
+							<a href="{% url 'index' %}#two">FAQ</a>
 						</li>
             <li>
-              <a href="#three">Contacts</a>
+              <a href="{% url 'index' %}#three">Contacts</a>
             </li>
 						<li>
-							<a id="book-button-top" href="#">Book a cleaning</a>
+							<a id="book-button-top" href="{% url 'quote' %}">Book a cleaning</a>
 						</li>
           </ul>
         </div>
