@@ -1,7 +1,7 @@
 from django.db import models
 
-class Quote(models.Model):
 
+class Quote(models.Model):
     bedrooms_choices = (
         (1, '1 bedroom'),
         (2, '2 bedrooms'),
@@ -50,7 +50,6 @@ class Quote(models.Model):
         (10, '10 hours'),
     )
 
-    # first step
     zip = models.IntegerField()
     bedrooms = models.IntegerField(choices=bedrooms_choices)
     bathrooms = models.IntegerField(choices=bathrooms_choices)
@@ -58,5 +57,11 @@ class Quote(models.Model):
     date = models.DateField()
     time = models.TimeField()
     email = models.EmailField()
-
-    # second step
+    first_name = models.CharField(max_length=25)
+    last_name = models.CharField(max_length=30)
+    street_address = models.CharField(max_length=50)
+    apt = models.CharField(max_length=10, blank=True)  # this should be optional
+    city = models.CharField(max_length=25)
+    state = models.CharField(max_length=2)
+    phone_number = models.CharField(max_length=10)
+    extras = models.CharField(max_length=30)
